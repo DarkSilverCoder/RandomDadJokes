@@ -15,7 +15,7 @@ class MainActivity : AppCompatActivity() {
         btnRDJ.setOnClickListener {
             // Code
             Log.i("MainActivity", "What did the fish say when it hit a wall? Dam.")
-            Toast.makeText(this, "What did the fish say when it hit a wall? Dam.", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, "What did the fish say when it hit a wall? Dam.", Toast.LENGTH_LONG).show()
         }
 
     }
