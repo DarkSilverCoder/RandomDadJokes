@@ -3,6 +3,7 @@ package com.ss.randomdadjokes
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -14,6 +15,7 @@ class MainActivity : AppCompatActivity() {
         btnRDJ.setOnClickListener {
             // Code
             Log.i("MainActivity", "What did the fish say when it hit a wall? Dam.")
+            Toast.makeText(this, "What did the fish say when it hit a wall? Dam.", Toast.LENGTH_SHORT).show()
         }
 
     }
