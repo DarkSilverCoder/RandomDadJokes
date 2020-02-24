@@ -18,6 +18,14 @@ class MainActivity : AppCompatActivity() {
             Toast.makeText(this, "What did the fish say when it hit a wall? Dam.", Toast.LENGTH_LONG).show()
         }
 
+        btnSendMsgToNextActivity.setOnClickListener {
+            val message: String = etUserMessage.text.toString()
+            Toast.makeText(this, message, Toast.LENGTH_LONG).show()
+
+            val intent = intent(this, RandomJokeActivity::class.java)
+            startActivity(intent)
+        }
+
     }
 
 }
